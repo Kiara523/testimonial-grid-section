@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Kiara523/testimonial-grid-section)
+- Live Site URL: [Add live site URL here](https://kiara523.github.io/testimonial-grid-section/)
 
 ## My process
 
@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://www.svgbackgrounds.com/tools/svg-to-css/) to convert svg in css
+- (https://www.svgbackgrounds.com/tools/svg-to-css/) to convert svg in css
 
 
 
