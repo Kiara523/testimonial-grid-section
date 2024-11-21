@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+html,
+body {
+    margin: 0;
+} 
+
+/* VARIABLES */
+
+:root {
+    /* CARD BG COLORS */
+    --CARD-BG-VIOLET:  hsl(263, 55%, 52%);
+    --CARD-BG-GRAY: hsl(217, 19%, 35%);
+    --CARD-BG-BLUE: hsl(219, 29%, 14%);
+    --CARD-BG-WHITE: hsl(0, 0%, 100%);
+
+    /* IMAGE BORDER */
+
+    --IMG-BORDER-COLOR: #a26fec;
+
+    /* FONT COLORS */
+    --DARK-BG-FONT-COLOR: hsl(0, 0%, 100%);
+    --LIGHT-BG-FONT-COLOR: hsl(217, 19%, 35%);
+    --VIOLET-CARD-DESCR-COLOR: hsl(0, 0%, 81%);
+    --BLUE-CARD-INTRO-COLOR:  hsl(210, 46%, 95%);
+
+    /* FONT FAMILY */
+    --FF: "Barlow Semi Condensed", monospace;
+
+    /* FONT SIZES */
+    --NAME-FS: 0.8rem;
+    --STATUS-FS: 0.688rem;
+    --INTRO-FS: 1.25rem;
+    --DESCRIPTION-FS: 0.8rem;
+
+    /* FONT WEIGHT */
+    --NAME-FW: 500;
+    --STATUS-FW: 500;
+    --INTRO-FW: 600;
+    --DESCRIPTION-FW: 500;
+    
+    /* LINE HEIGHT */
+    --NAME-LH: 1.3;
+    --STATUS-LH: 1.1;
+    /* --TITLE-LH: */
+    --DESCRIPTION-LH: 1.4;
+
+
+    /* OPACITY */
+    --VERIF-GRAD-OPACITY: 50%;
+    --REVIEW-DESCR-OPACITY: 70%;
+    
+}
+
+/* GENERAL STYLES */
+body {
+    min-height: 100svh;
+    font-family: var(--FF);
+    background-color: var(--BLUE-CARD-INTRO-COLOR);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50px;
+    max-width: 28px;
+    height: auto;
+    
+}
+
+
+/* CARD STYLES */
+
+.img__border {
+    max-width: 32px;
+    height: auto;
+    border: 2.5px solid;
+    border-color: var(--IMG-BORDER-COLOR);
+}
+
+.violet {
+background-image: url('data:image/svg+xml,<svg width="104" height="102" xmlns="http://www.w3.org/2000/svg"><path d="M104 102V59.727H84.114c0-5.871.689-11.182 2.068-15.933 1.379-4.75 3.42-9.287 6.125-13.61C95.01 25.86 98.909 22.257 104 19.375V0c-9.758 4.27-17.712 9.874-23.864 16.813-6.151 6.939-10.712 14.545-13.681 22.818C63.485 47.904 62 59.941 62 75.74V102h42zm-62 0V59.727H22.114c0-5.871.689-11.182 2.068-15.933 1.379-4.75 3.42-9.287 6.125-13.61C33.01 25.86 36.909 22.257 42 19.375V0c-9.652 4.27-17.58 9.874-23.784 16.813C12.01 23.752 7.424 31.358 4.455 39.631 1.485 47.904 0 59.941 0 75.74V102h42z" fill="%23A775F1" fill-rule="nonzero"/></svg>');
+background-position: right 70px top;
+background-repeat: no-repeat;    
+background-color: var(--CARD-BG-VIOLET);
+}
+
+.gray {
+    background-color: var(--CARD-BG-GRAY);
+}
+
+.white {
+    background-color: var(--CARD-BG-WHITE);
+}
+
+.blue {
+    background-color: var(--CARD-BG-BLUE);
+}
+
+
+.card__dark--style {
+    color: var(--DARK-BG-FONT-COLOR);
+}
+
+.card__light--style {
+    color: var(--LIGHT-BG-FONT-COLOR);
+} 
+
+.violet__description {
+    color: var(--VIOLET-CARD-DESCR-COLOR);
+    font-size: var(--DESCRIPTION-FS);
+    font-weight: var(--DESCRIPTION-FW);
+    opacity: var(--REVIEW-DESCR-OPACITY);
+    line-height: var(--DESCRIPTION-LH);
+}
+
+.blue__intro {
+    color: var(--BLUE-CARD-INTRO-COLOR);
+    font-size: var(--INTRO-FS);
+    font-weight: var(--INTRO-FW);
+    padding-bottom: 1.2rem;
+}
+
+.name {
+    font-size: var(--NAME-FS);
+    font-weight: var(--NAME-FW);
+}
+
+.status {
+    font-size: var(--STATUS-FS);
+    font-weight: var(--STATUS-FW);
+    opacity: var(--VERIF-GRAD-OPACITY);
+}
+
+.intro {
+    font-size: var(--INTRO-FS);
+    font-weight: var(--INTRO-FW);
+    padding-bottom: 1rem;
+}
+
+.description {
+    font-size: var(--DESCRIPTION-FS);
+    font-weight: var(--DESCRIPTION-FW);
+    line-height: var(--DESCRIPTION-LH);
+    opacity: var(--REVIEW-DESCR-OPACITY);
+}
+
+.card {
+    border-radius: 8px;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.grid__area {
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    display: grid;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+/* FOOTER */
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    @media (width >= 43.75rem) {
+        .grid__area {
+            padding-inline: 3rem;
+            display: grid;
+            row-gap: 1.5rem;
+            column-gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:  
+            'one one'
+            'two five'
+            'three five'
+            'four four';
+        }
+
+        .violet {
+            grid-area: one;
+        }
+
+        .gray {
+            grid-area: three;
+        }
+    
+        .blue {
+            grid-area: five;
+        }
+
+        .third {
+            grid-area: two;
+        } 
+        
+        .lastchild {
+            grid-area: four;
+        }
+    }
+
+    @media (width >= 75rem) {
+        .grid__area {
+            padding-inline: 10rem;
+            display: grid;
+            row-gap: 1.5rem;
+            column-gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:  
+            'one one two five'
+            'three four four five';
+        }
+
+        .violet {
+            grid-area: one;
+        }
+
+        .gray {
+            grid-area: two;
+        }
+    
+        .blue {
+            grid-area: four;
+        }
+
+        .third {
+            grid-area: three;
+        } 
+        
+        .lastchild {
+            grid-area: five;
+        }
+    }
+
+    
